@@ -47,12 +47,7 @@ jobs:
           # curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
           sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           
-      - name: k2p插件
-        run: |
-          cd package
-          mkdir openwrt-packages
-          cd openwrt-packages
-          git clone https://github.com/kenzok8/openwrt-packages.git
+
               
       - name: Clone source code
         env:
