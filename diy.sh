@@ -7,4 +7,6 @@
 #=================================================
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-git clone https://github.com/kenzok8/openwrt-packages.git
+git clone https://github.com/HiGarfield/lede-17.01.4-Mod.git package/lean/smartdns
+git clone https://github.com/HiGarfield/lede-17.01.4-Mod.git package/lean/luci-app-smartdns
+git clone https://github.com/HiGarfield/lede-17.01.4-Mod.git package/lean/luci-app-eqos
