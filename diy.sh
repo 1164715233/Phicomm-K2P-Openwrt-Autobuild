@@ -10,3 +10,6 @@
 git clone https://github.com/1164715233/package.git package/luci-app-eqos
 git clone https://github.com/1164715233/package.git package/smartdns
 git clone https://github.com/1164715233/package.git package/luci-app-smartdns
+# Fix WiFi disabled after reboot
+sed -i "2a\ifconfig rax0 up\nifconfig ra0 up\nifconfig apclix0 up\nifconfig apcli0 up" package/base-files/files/etc/rc.local
+
